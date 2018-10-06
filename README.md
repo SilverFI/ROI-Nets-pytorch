@@ -3,9 +3,9 @@
 ## How to use:
 - clone codes
 - download vgg pretrained parameters [vgg16](https://download.pytorch.org/models/vgg16-397923af.pth) in `data` directory
-- prepare labels for every images, the format is shown in `data/labels_224_landmarks_sample.txt`
-- modify parameters in `lib/train_test.py`, like `image_dir`. `save_dir`,`person_batch`
-- run code: `cd lib; CUDA_VISIBLE_DEVICES=1 python train_test.py`
+- prepare labels for every image, the format is shown in `data/labels_224_landmarks_sample.txt`
+- modify parameters in `lib/train_test.py`, like `image_dir`,`save_dir`,`person_batch`
+- run code: `cd lib; CUDA_VISIBLE_DEVICES=0 python train_test.py`
 ## Result:
 1. train loss  
 ![train loss](data/loss.png)
